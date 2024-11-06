@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myfunction(2, 4)">Execute JS function</button>
+
+    <script>
+        function myfunction(x, y)
+        {
+            if (y=== undefined) {
+                y = 2;
+            }
+            document.write(x*y);
+        }
+    </script>
+
+    <button type="button" onclick="myFunction()">Click Me!</button>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+    <script>
+        var b = 5;
+        function myFunction() {
+            var a = 4;
+            document.getElementById("demo").innerHTML = b * a;
+        }
+        document.getElementById("demo1").innerHTML = a;
+        document.getElementById("demo1").innerHTML = b;
+    </script>
+
+    <center>
+        <h1 style="color: green;">IT Education</h1>
+        <h3>Function Declaration</h3>
+        <script>
+            var result = function (a, b) {return a * b} ;
+            document.write(result(5,8));
+        </script>
+    </center>
+</body>
+</html>
