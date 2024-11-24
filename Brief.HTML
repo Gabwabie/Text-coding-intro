@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Data Types</title>
+</head>
+<body>
+    <script>
+        var a = 5;
+        var b = 8;
+        var c = 8;
+        var d = null;
+        var e;
+        var name = "Gabrielle"
+        document.write("a and b are equal : " + (a==b));
+        document.write("<br>");
+        document.write("b and c are equal : " + (b==c));
+        document.write("<br>");
+        document.write("The value of d is : " + d);
+        document.write("<br>");
+        document.write("The value of e is : " + e);
+        document.write("<br>");
+        document.write("My name is : " + name);
+    </script>
+
+    <button onclick="myFunction()">Try it</button>
+    <p id="hour"></p>
+    <p id="greet"></p>
+    <script>
+        function myFunction() {
+            var greeting;
+            var time = new Date().getHours();
+            var minutes = new Date().getMinutes();
+
+            if (time < 10) {
+                greeting = "Good morning"
+            }
+            else if (time < 20) {
+                greeting = "Good day"
+            }
+            else {
+                greeting = "Good evening"
+            }
+            document.getElementById("hour").innerHTML = "Current Time is : " + time + ":" + minutes;
+            document.getElementById("greet").innerHTML = greeting;
+        }
+    </script>
+
+    <p id="number"></p>
+    <script>
+        var text = "";
+        var i = 2;
+        while (i < 21) {
+            text += "<br>Gabrielle";
+            i = i + 2;
+        }
+        document.getElementById("number").innerHTML = text;
+    </script>
+</body>
+</html>
