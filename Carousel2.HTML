@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Carousel</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+            text-transform: capitalize;
+        }
+
+        .paragraph {
+            text-align: center;
+            font-size: large;
+        }
+        .carousel-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+
+        .myslides {
+            display: none;
+            max-height: 100%;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adoption for cats</h1>
+
+    <div class="carousel-container">
+        <img class="myslides" src="Cat 1.jpg" height="500" width="500" alt="Slide 1">
+        <img class="myslides" src="Cat 2.jpg" height="500" width="500" alt="Slide 2">
+        <img class="myslides" src="Cat 3.jpg" height="500" width="500" alt="Slide 3">
+        <img class="myslides" src="Cat 4.jpg" height="500" width="500" alt="Slide 4">
+    </div>
+
+    <script src="Carousel script.js"></script>
+    <br>
+
+    <h1>About Us</h1>
+    <br>
+
+    <div class="paragraph">
+    We specialize in having a safe and cozy homes for cats that are up for adoption.
+    We are also profound in rescuing homeless kittens who are in need of a new home
+    and owner.
+    <br>
+    This website is simply meant to advertise our humble cat shop, from toys you can buy
+    to a cat you can adopt.
+    </div>
+
+</body>
+</html>
