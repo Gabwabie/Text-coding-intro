@@ -7,15 +7,54 @@
 
     <style>
         form {
-            border: 2px solid darkslategray;
+            display: flex;
+            flex-direction: column;
+        }
+        .form-container {
             width: 400px;
-            height: 550px;
-            background-color: cadetblue;
-            margin: 0 auto;
+            margin: 50px auto;
+            background-color: rgb(196, 226, 226);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgb(48, 63, 65);
+        }
+        label {
+            font-size: 15px;
+            color: darkslategrey;
+            margin-bottom: 5px;
+        }
+        input[type="text"]
+        input[type="email"]
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid powderblue;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 17px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: aliceblue;
+            border: none;
+            border-radius: 5px;
+            font-size: 17px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #0066d4;
+        }
+        input[type="submit"]:active {
+            background-color: #004494;
         }
     </style>
 </head>
 <body>
+    <div class="form-container">
     <form>
         <h1>Sign In</h1>
         <label>Name:</label>
@@ -40,7 +79,8 @@
 
         <br>
 
-    <button type="submit">Sign in</button>
+    <input type="submit" value="Submit">
     </form>
+    </div>
 </body>
 </html>
